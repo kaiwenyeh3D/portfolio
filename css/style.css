@@ -301,14 +301,14 @@ html, body {
 .swiper-container {
   position: relative;
   width: 870px;
-  height: 760px;
+  height: 900px;
   margin-top: 65px;
 }
 
 .swiper-wrapper {
   position: absolute;
   width: 870px;
-  height: 760px;
+  height: 900px;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -317,13 +317,13 @@ html, body {
 .all {
   position: absolute;
   width: 3000px;
-  height: 760px;
+  height: auto;
 }
 
 .all .swiper-slide {
   position: relative;
   width: 870px;
-  height: 760px;
+  margin-top: 81px;
   display: inline-block;
 }
 
@@ -332,5 +332,48 @@ html, body {
   display: inline-block;
   width: 275px;
   height: 370px;
+  margin: 15px 11px 0 0;
+}
+
+.box a {
+  display: block;
+  width: 275px;
+  height: 370px;
+  text-decoration: none;
   background-color: #d5d5d5;
+}
+
+.box a::before {
+  content: "view";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  font-size: 20px;
+  background-color: #103293;
+  color: #fff;
+  text-align: center;
+  left: 50%;
+  top: 150px;
+  margin-left: -40px;
+}
+
+.box a h2 {
+  width: 240px;
+  height: 18px;
+  font-size: 18px;
+  color: #000;
+  margin: 55px 0 5px 20px;
+  font-weight: bold;
+}
+
+.box a p {
+  width: 240px;
+  font-size: 13px;
+  color: #656565;
+  line-height: 18px;
+  margin: 0 0 0 20px;
 }
