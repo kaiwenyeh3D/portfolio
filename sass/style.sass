@@ -280,6 +280,7 @@ html,body
 		left: 50%
 		top: 150px
 		margin-left: -40px
+		z-index: 10
 		@include transition (0.3s)
 
 .box a:hover::before
@@ -314,6 +315,13 @@ html,body
 
 .box a:hover p
 	color: #000
+
+.box a img
+	+filter(brightness,30%)
+	@include transition (0.3s)
+
+.box a:hover img
+	+filter(brightness,80%)
 
 .main02
 	width: 100%
