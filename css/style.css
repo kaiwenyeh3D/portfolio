@@ -310,7 +310,7 @@ html, body {
   display: inline-block;
 }
 
-.swiper-pagination {
+.swiper-container-horizontal > .swiper-pagination {
   height: 50px;
   line-height: 50px;
   bottom: 0;
