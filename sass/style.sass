@@ -390,3 +390,81 @@ html,body
 	height: 490px
 	right: 0
 	top: 125px
+
+.main03
+	width: 100%
+	height: 870px
+
+.about
+	position: relative
+	width: 1200px
+	height: 620px
+	margin-top: 120px
+	&::before
+		content: ""
+		position: absolute
+		width: 760px
+		height: 560px
+		background: url(#{$img}about.png) no-repeat center center
+		right: 0
+		top: 0
+		z-index: 1
+	&::after
+		content: ""
+		position: absolute
+		width: 590px
+		height: 560px
+		background-color: #030f32
+		left: 0
+		top: 60px
+		z-index: 2
+
+.about .tag
+	position: absolute
+	font-size: 15px
+	color: #a8a8a8
+	z-index: 3
+	top: 190px
+	left: 90px
+	&::before
+		content: ""
+		position: absolute
+		width: 14px
+		height: 4px
+		background-color: #00ccff
+		top: 2px
+		left: -20px
+	&::after
+		content: ""
+		position: absolute
+		width: 14px
+		height: 4px
+		background-color: #103293
+		top: 9px
+		left: -20px
+
+.about h3
+	position: absolute
+	width: 120px
+	height: 40px
+	line-height: 40px
+	font-size: 30px
+	color: #fff
+	top: 260px
+	left: 220px
+	border-bottom: solid 1px #fff
+	z-index: 3
+
+.about p
+	position: absolute
+	width: 450px
+	font-size: 15px
+	line-height: 24px
+	color: #00ccff
+	z-index: 3
+	top: 350px
+	left: 70px
+	&:nth-of-type(2)
+		font-size: 13px
+		color: #8d8d8d
+		top: 400px
