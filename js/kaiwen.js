@@ -25,4 +25,19 @@ $(function(){
 		$('.gotop').on("click", function(){
 			  	$('html,body').animate({scrollTop:0},800);
 			 });
+
+		var swiper = new Swiper('.swiper-container', {
+			loop: true,
+			pagination: {
+		        el: '.swiper-pagination',
+		        clickable: true,
+		        renderBullet: function (index, className) {
+		        return '<span class="' + className + '">' + (index + 1) + '</span>';
+	        	},
+	      	},
+	      	autoplay: {
+      			delay: 3000,
+      			disableOnInteraction: false,
+    		}
+		});
 });
