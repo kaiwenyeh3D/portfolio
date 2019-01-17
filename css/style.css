@@ -80,7 +80,6 @@ html, body {
   left: 0;
   top: 90px;
 }
-
 .kaiwen::before {
   content: "";
   position: absolute;
@@ -91,7 +90,6 @@ html, body {
   background-color: #030f32;
   z-index: 1;
 }
-
 .kaiwen::after {
   content: "";
   position: absolute;
@@ -111,7 +109,6 @@ html, body {
   top: 75px;
   z-index: 3;
 }
-
 .pro::before {
   content: "";
   position: absolute;
@@ -121,7 +118,6 @@ html, body {
   top: 2px;
   left: -20px;
 }
-
 .pro::after {
   content: "";
   position: absolute;
@@ -234,7 +230,6 @@ html, body {
   right: 0;
   top: 65px;
 }
-
 .case::before {
   content: "";
   position: absolute;
@@ -245,7 +240,6 @@ html, body {
   right: 0;
   z-index: 1;
 }
-
 .case::after {
   content: "";
   position: absolute;
@@ -269,7 +263,7 @@ html, body {
   z-index: 3;
 }
 
-.tag {
+.case .tag {
   position: absolute;
   font-size: 15px;
   color: #a8a8a8;
@@ -277,8 +271,7 @@ html, body {
   top: 90px;
   left: 80px;
 }
-
-.tag::before {
+.case .tag::before {
   content: "";
   position: absolute;
   width: 14px;
@@ -287,8 +280,7 @@ html, body {
   top: 2px;
   left: -20px;
 }
-
-.tag::after {
+.case .tag::after {
   content: "";
   position: absolute;
   width: 14px;
@@ -302,7 +294,7 @@ html, body {
   position: relative;
   width: 870px;
   height: 900px;
-  margin-top: 65px;
+  padding-top: 65px;
 }
 
 .swiper-wrapper {
@@ -341,8 +333,17 @@ html, body {
   height: 370px;
   text-decoration: none;
   background-color: #d5d5d5;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-
+.box a:hover {
+  background-color: #b9b9b9;
+  -moz-box-shadow: rgba(3, 15, 50, 0.4) 0 0 18px, rgba(131, 131, 131, 0.2) 0 0 3px 1px inset;
+  -webkit-box-shadow: rgba(3, 15, 50, 0.4) 0 0 18px, rgba(131, 131, 131, 0.2) 0 0 3px 1px inset;
+  box-shadow: rgba(3, 15, 50, 0.4) 0 0 18px, rgba(131, 131, 131, 0.2) 0 0 3px 1px inset;
+}
 .box a::before {
   content: "view";
   position: absolute;
@@ -353,12 +354,29 @@ html, body {
   -webkit-border-radius: 80px;
   -moz-border-radius: 80px;
   font-size: 20px;
-  background-color: #103293;
-  color: #fff;
+  background-color: #000;
+  color: #00ccff;
   text-align: center;
   left: 50%;
   top: 150px;
   margin-left: -40px;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.box a:hover::before {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 70px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  font-size: 15px;
+  margin-left: -35px;
+  background-color: #103293;
+  color: #fff;
 }
 
 .box a h2 {
@@ -368,6 +386,14 @@ html, body {
   color: #000;
   margin: 55px 0 5px 20px;
   font-weight: bold;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.box a:hover h2 {
+  color: #103293;
 }
 
 .box a p {
@@ -376,4 +402,110 @@ html, body {
   color: #656565;
   line-height: 18px;
   margin: 0 0 0 20px;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.box a:hover p {
+  color: #000;
+}
+
+.main02 {
+  width: 100%;
+  height: 710px;
+  background-color: #000;
+}
+
+.movtag {
+  position: absolute;
+  width: 300px;
+  height: 520px;
+  left: 0;
+  top: 95px;
+}
+.movtag::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  background-color: #00ccff;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.movtag::after {
+  content: "";
+  position: absolute;
+  width: 265px;
+  height: 490px;
+  background-color: #030f32;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+}
+
+.movtag .tag {
+  position: absolute;
+  font-size: 15px;
+  color: #a8a8a8;
+  z-index: 3;
+  top: 90px;
+  left: 80px;
+}
+.movtag .tag::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background-color: #00ccff;
+  top: 2px;
+  left: -20px;
+}
+.movtag .tag::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background-color: #103293;
+  top: 9px;
+  left: -20px;
+}
+
+.movtag h3 {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 30px;
+  color: #fff;
+  top: 150px;
+  left: 105px;
+  border-bottom: solid 1px #fff;
+  z-index: 3;
+}
+
+.movtag p {
+  position: absolute;
+  width: 200px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #00ccff;
+  z-index: 3;
+  top: 230px;
+  left: 65px;
+}
+.movtag p:nth-of-type(2) {
+  font-size: 13px;
+  color: #8d8d8d;
+  top: 330px;
+}
+
+.movie {
+  position: absolute;
+  width: 870px;
+  height: 490px;
+  right: 0;
+  top: 125px;
 }
