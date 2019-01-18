@@ -372,6 +372,7 @@ html, body {
   width: 275px;
   height: 370px;
   margin: 15px 11px 0 0;
+  vertical-align: top;
 }
 
 .box a {
