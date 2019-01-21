@@ -29,11 +29,11 @@ body{
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
-	background-color:#2fbae7;
+	background-color:#00ccff;
 }
 #jprePercentage {
 	width: 430px;
-	color:#2fbae7;
+	color:#00ccff;
 	font-family:"Gotham";
 	/*font-weight:bold;*/
 	text-align:center;
@@ -57,7 +57,7 @@ body{
 	margin:0 auto;
 	color:#fff;
 	text-shadow:-1px -1px 0 #01293F;
-	border:1px solid #2EACEA;
+	border:1px solid #00ccff;
 	
 	border-radius:30px;
 	-moz-border-radius:30px;
