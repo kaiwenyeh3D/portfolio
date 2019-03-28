@@ -188,11 +188,7 @@ html, body {
   height: 190px;
   top: 150px;
   left: 70px;
-  border-radius: 190px;
-  -webkit-border-radius: 190px;
-  -moz-border-radius: 190px;
   z-index: 3;
-  overflow: hidden;
 }
 
 .text {
